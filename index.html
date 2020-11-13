@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Do you Love Me</title>
+    <style>
+        #no{
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Do You Love Me</h1>
+<input type="button" value="yes" onclick="showYes()">
+<input type="button" id="no" value="no" onmouseover="showNo()">
+<script>
+    function showYes() {
+        alert("Ok ban ei")
+    }
+    function showNo(){
+        let topValue=Math.floor(Math.random()*window.innerHeight);
+        let leftValue=Math.floor(Math.random()*window.innerWidth);
+        document.getElementById("no").style.left=leftValue+"px";
+        document.getElementById("no").style.top=topValue+"px";
+    }
+
+</script>
+</body>
+</html>
